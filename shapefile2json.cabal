@@ -15,14 +15,17 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
+  exposed-modules:     Data.Shapefile
+                 ,     Data.Shapefile.Types
   build-depends:       base >= 4.7 && < 5
                ,       dbf
                ,       geo-uk
                ,       shapefile
+               ,       bytestring
+               ,       aeson
   default-language:    Haskell2010
 
-executable simple-exe
+executable shapefile2json
   hs-source-dirs:      app
   main-is:             Main.hs
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
@@ -30,7 +33,7 @@ executable simple-exe
                      , shapefile2json
   default-language:    Haskell2010
 
-test-suite simple-test
+test-suite shapefile2json-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             Spec.hs

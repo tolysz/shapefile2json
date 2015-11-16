@@ -1,0 +1,22 @@
+/.idea
+/shapefile2json.iml
+### Haskell template
+dist
+cabal-dev
+*.o
+*.hi
+*.chi
+/bla
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+*.prof
+*.aux
+*.hp
+.stack-work/
+
+# Created by .ignore support plugin (hsz.mobi)

@@ -7,12 +7,15 @@ resolver: lts-3.8
 packages:
 - '.'
 - '../geo-uk'
+- location:
+   git: git@github.com:tolysz/shapefile
+   commit: 9a3821e1c6aef08b9304ed3c79cccbba09970d7d
+- location:
+   git: git@github.com:tolysz/dbf
+   commit: 49e60f9913c6967fd13743f67fdf43d5498a5993
 
 # Packages to be pulled from upstream that are not in the resolver (e.g., acme-missiles-0.3)
 extra-deps:
-- dbf-0.0.0.2
-- shapefile-0.0.0.1
-- geodetics-0.0.4
 - rwlock-0.0.0.3
 - monad-loops-stm-0.4
 
